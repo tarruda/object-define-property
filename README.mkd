@@ -1,6 +1,6 @@
 # object-define-property
 
-#### Object.definePropert{y,ies} replacement compatible with old browser. From https://github.com/kriskowal/es5-shim
+#### Object.definePropert{y,ies} replacement compatible with old browsers. From https://github.com/kriskowal/es5-shim
 
 [![Build Status](https://travis-ci.org/tarruda/object-define-property.png)](https://travis-ci.org/tarruda/object-define-property)
 <br>
