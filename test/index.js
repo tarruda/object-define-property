@@ -1,5 +1,6 @@
 var assert = require('assert');
 var defineProperty = require('../index_browser').defineProperty;
+var defineProperties = require('../index_browser').defineProperties;
 
 // adapted from https://github.com/es-shims/es5-shim/blob/master/tests/spec/s-object.js#L91-L138
 describe("defineProperty", function () {
@@ -8,11 +9,13 @@ describe("defineProperty", function () {
   beforeEach(function() {
     obj = {};
 
-    defineProperty(obj, 'name', {
-      value : 'Testing',
-      configurable: true,
-      enumerable: true,
-      writable: true
+    defineProperties(obj, {
+      name: {
+        value : 'Testing',
+        configurable: true,
+        enumerable: true,
+        writable: true
+      }
     });
   });
 
